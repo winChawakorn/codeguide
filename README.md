@@ -1,6 +1,6 @@
-#codeguide
+# codeguide
 
-##Check parameters for validity
+## Check parameters for validity
 Most methods and constructors have some restriction on what value may be passed
 into their parameter. It may get the usable value to make that method can work
 correctly and won't make an error. We should detect the error as soon as possible
@@ -44,7 +44,7 @@ Now Box won't be initialized with the negative capacity anymore.
 
 Reference : Item38 in [Effective Java](http://www.ebooksbucket.com/uploads/itprogramming/java/Effective_Java_2nd_Edition.pdf)
 
-##Always override toString
+## Always override toString
 When we create a class, it's automatically implement java.lang.Object. That's mean we already implement
 toString method. If we don't override toString method, program will print out some source code. For
 example `PhoneNumber@163b91.`. So we need to override toString method to let the program print out
