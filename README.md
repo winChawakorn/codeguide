@@ -43,3 +43,27 @@ Then, we added if statement to check the negative number and throw ArithmeticExc
 Now Box won't be initialized with the negative capacity anymore.
 
 Reference : Item38 in [Effective Java](http://www.ebooksbucket.com/uploads/itprogramming/java/Effective_Java_2nd_Edition.pdf)
+
+##Always override toString
+When we create a class, it's automatically implement java.lang.Object. That's mean we already implement
+toString method. If we don't override toString method, program will print out some source code. For
+example "PhoneNumber@163b91.". So we need to override toString method to let the program print out
+whatever we want.
+```
+/**
+ * A money for the example.
+ */
+public class Money {
+	private double value;
+	private String currency;
+	.
+	.
+	.
+	@Override
+	public String toString() {
+		return this.value + " " + this.currency;
+	}
+}
+```
+In the example, when this class was printed, it won't print "Money@xxxxxx." any more.
+It will print like "20 Baht" instead.
