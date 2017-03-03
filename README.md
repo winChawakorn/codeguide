@@ -67,3 +67,5 @@ public class Money {
 ```
 In the example, when this class was printed, it won't print "Money@xxxxxx." any more.
 It will print like "20 Baht" instead.
+
+Reference : Item10 in [Effective Java](http://www.ebooksbucket.com/uploads/itprogramming/java/Effective_Java_2nd_Edition.pdf)
